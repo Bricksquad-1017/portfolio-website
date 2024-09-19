@@ -1,0 +1,21 @@
+{
+    "folders": [
+        {
+            "path": "." // This means the current directory is part of the workspace
+        },
+        {
+            "path": "../another-folder" // Relative path to another folder
+        }
+    ],
+    "settings": {
+        // Add any workspace-specific settings here
+        "editor.formatOnSave": true // Enables format on save for this workspace
+    },
+    "extensions": {
+        "recommendations": [
+            "esbenp.prettier-vscode", // Prettier extension for code formatting
+            "dbaeumer.vscode-eslint",  // ESLint extension for linting JavaScript/TypeScript code
+            "ms-python.python" // Python extension
+        ]
+    }
+}
