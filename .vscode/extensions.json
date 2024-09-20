@@ -4,6 +4,7 @@
         "github.copilot",
         "vsnikhil.openai-autocomplete",
         "aaravb.chrome-extension-developer-tools",
-        "negokaz.live-server-preview"
+        "negokaz.live-server-preview",
+        "igordvlpr.open-in-browser"
     ]
 }
