@@ -4,9 +4,19 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+
+        {
+            "type": "firefox",
+            "request": "launch",
+            "reAttach": true,
+            "name": "Launch localhost",
+            "url": "http://localhost/index.html",
+            "webRoot": "${workspaceFolder}"
+        },
+
         {
             "name": ".NET Core Launch (web)",
-            "type": "node",
+            "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
@@ -14,10 +24,7 @@
             "args": [],
             "cwd": "${workspaceFolder}",
 
-            "serverReadyAction": {
-                "action": "openExternally",
-                "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
-            },
+
             "env": {
                 "ASPNETCORE_ENVIRONMENT": "Development"
             },
@@ -25,7 +32,7 @@
         },
         {
             "name": ".NET Core Attach",
-            "type": "node",
+            "type": "coreclr",
             "request": "attach",
             "processId": "${command:pickProcess}"
         },
@@ -33,8 +40,7 @@
         {
             "name": "Docker .NET Attach (Preview)",
             "type": "docker",
-            "request": "attach",
-            "platform": "netCore"
+            "request": "attach"
         },
         {
             "type": "chrome",
