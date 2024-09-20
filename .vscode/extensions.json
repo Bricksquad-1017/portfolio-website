@@ -3,6 +3,7 @@
         "github.copilot-chat",
         "github.copilot",
         "vsnikhil.openai-autocomplete",
-        "aaravb.chrome-extension-developer-tools"
+        "aaravb.chrome-extension-developer-tools",
+        "negokaz.live-server-preview"
     ]
 }
