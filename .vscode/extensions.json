@@ -5,6 +5,7 @@
         "aaravb.chrome-extension-developer-tools",
         "negokaz.live-server-preview",
         "igordvlpr.open-in-browser",
-        "github.copilot"
+        "github.copilot",
+        "formulahendry.dotnet"
     ]
 }

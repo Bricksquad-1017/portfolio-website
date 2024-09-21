@@ -12,7 +12,8 @@
         "recommendations": [
             "esbenp.prettier-vscode", // Prettier extension for code formatting
             "dbaeumer.vscode-eslint",  // ESLint extension for linting JavaScript/TypeScript code
-            "ms-python.python" // Python extension
+            "ms-python.python",
+            "formulahendry.dotnet" // Python extension
         ]
     }
 }
