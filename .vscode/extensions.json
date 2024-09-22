@@ -6,6 +6,7 @@
         "negokaz.live-server-preview",
         "igordvlpr.open-in-browser",
         "github.copilot",
-        "formulahendry.dotnet"
+        "formulahendry.dotnet",
+        "eamodio.gitlens"
     ]
 }
