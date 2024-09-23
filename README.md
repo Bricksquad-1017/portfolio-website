@@ -1,8 +1,10 @@
 # Portfolio Website
 
-## Description
-
 This is a personal website to showcase my web development projects and skills. It uses HTML, CSS, and JavaScript.
+
+## Live Demo
+
+Check out my live portfolio here[Live Demo](https://Bricksquad-1017.github.io/portfolio)
 
 ## Features
 
