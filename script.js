@@ -3,10 +3,17 @@
  * 
  * @param {any} params - The parameters for the function.
  */
+/**
+ * Function to perform an operation based on the provided parameters.
+ *
+ * @param {Object} params - The parameters for the function.
+ */
 function name(params) {
     // script.js
 
 
+
+}
 
 // Smooth Scrolling
 function smoothScroll() {
@@ -43,6 +50,8 @@ function loadProjects() {
             projectsContainer.appendChild(projectDiv);
         });
     }
+}
+
 // Form Validation
 function validateForm() {
     const contactForm = document.getElementById('contact-form');
@@ -57,11 +66,12 @@ function validateForm() {
             }
         }
         
-        }
-            });
-        }
+            }
+        });
+    }
+}
 
-// Initialize Functions
+// Initialize functions
 function init() {
     smoothScroll();
     loadProjects();
@@ -69,4 +79,8 @@ function init() {
 }
 
 // Call the init function to initialize functionalities
+document.addEventListener('DOMContentLoaded', init);
+
+// Call the init function to initialize functionalities
+document.addEventListener('DOMContentLoaded', init)// Call the init function to initialize functionalities
 document.addEventListener('DOMContentLoaded', init);
