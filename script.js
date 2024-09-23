@@ -1,4 +1,12 @@
-// script.js
+/**
+ * Function name
+ * 
+ * @param {any} params - The parameters for the function.
+ */
+function name(params) {
+    // script.js
+
+}
 
 // Smooth Scrolling
 function smoothScroll() {
@@ -22,28 +30,33 @@ function loadProjects() {
 
     const projectsContainer = document.getElementById('projects-container');
 
-    projects.forEach(project => {
-        const projectDiv = document.createElement('div');
-        projectDiv.classList.add('project');
-        projectDiv.innerHTML = `
-            <h3>${project.title}</h3>
-            <p>${project.description}</p>
-            <img src="${project.image}" alt="${project.title}" class="portfolio-image">
-        `;
-        projectsContainer.appendChild(projectDiv);
-    });
-}
-
+    if (projectsContainer) {
+        projects.forEach(project => {
+            const projectDiv = document.createElement('div');
+            projectDiv.classList.add('project');
+            projectDiv.innerHTML = `
+                <h3>${project.title}</h3>
+                <p>${project.description}</p>
+                <img src="${project.image}" alt="${project.title}" class="portfolio-image">
+            `;
+            projectsContainer.appendChild(projectDiv);
+        });
+    }
 // Form Validation
 function validateForm() {
-    document.getElementById('contact-form').addEventListener('submit', function (e) {
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function (e) {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
 
-        if (!name || !email) {
-            e.preventDefault(); // Prevent form submission
-            alert('Please fill in all fields.');
-        }
+            if (!name || !email) {
+                e.preventDefault(); // Prevent form submission
+                alert('Please fill in all fields.');
+            }
+        });
+    }
+}       }
     });
 }
 
