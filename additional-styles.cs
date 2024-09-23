@@ -16,14 +16,15 @@ namespace PortfolioWebsite
             Url = url;
         }
 
-        public static List<Project> GetSampleProjects()
+        /// <summary>
+        /// Retrieves a list of sample projects.
+        /// </summary>
+        /// <returns>A list of <see cref="Project"/> objects representing sample projects.</returns>
+        public static List<Project> GetSampleProjects() => new List<Project>
         {
-            return new List<Project>
-            {
-                new Project("Project One", "Description for project one", "http://example.com/project-one"),
-                new Project("Project Two", "Description for project two", "http://example.com/project-two"),
-                new Project("Project Three", "Description for project three", "http://example.com/project-three")
-            };
-        }
+            new Project("Project One", "Description for project one", "https://example.com/project-one"),
+            new Project("Project Two", "Description for project two", "https://example.com/project-two"),
+            new Project("Project Three", "Description for project three", "https://example.com/project-three")
+        };
     }
 }
