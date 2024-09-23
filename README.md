@@ -33,6 +33,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## Contact
 
-You can reach me at [cervantes.miguel1017@icloud.com][contactEmail] for any questions or collaboration opportunities.
-
-[contactEmail]: mailto:cervantes.miguel1017@icloud.com
+You can reach me at [cervantes.miguel1017@icloud.com](mailto:cervantes.miguel1017@icloud.com) for any questions or collaboration opportunities.

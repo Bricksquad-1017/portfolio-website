@@ -14,16 +14,23 @@ namespace PortfolioWebsite
             Title = title;
             Description = description;
             Url = url;
+
+    }
+
         }
 
-        /// <summary>
-        /// Retrieves a list of sample projects.
-        /// </summary>
-        /// <returns>A list of <see cref="Project"/> objects representing sample projects.</returns>
-        public static List<Project> GetSampleProjects() => new List<Project>
+    public class Portfolio
+    {
+        public List<Project> Projects { get; set; }
+
+        public Portfolio()
         {
-            new Project("Project One", "Description for project one", "https://example.com/project-one"),
-            new Project("Project Two", "Description for project two", "https://example.com/project-two"),
-            new Project("Project Three", "Description for project three", "https://example.com/project-three")
-        };
+            Projects = new List<Project>
+            {
+                new Project("Project One", "Description for project one", "https://example.com/project-one"),
+                new Project("Project Two", "Description for project two", "https://example.com/project-two"),
+                new Project("Project Three", "Description for project three", "https://example.com/project-three")
+            };
+        }
     }
+}

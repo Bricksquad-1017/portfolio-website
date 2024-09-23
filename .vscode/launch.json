@@ -74,5 +74,6 @@
             "url": "http://localhost:8080",
             "webRoot": "${workspaceFolder}"
         }
-    ]
+    ],
+    "vscode-edge-devtools.browserArgs": ["--remote-debugging-port=9222", "--user-data-dir=C:\\path_to_user_date"]
 }
