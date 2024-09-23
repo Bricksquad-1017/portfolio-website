@@ -27,4 +27,3 @@ namespace PortfolioWebsite
             new Project("Project Three", "Description for project three", "https://example.com/project-three")
         };
     }
-}
