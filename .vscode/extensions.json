@@ -8,6 +8,10 @@
         "github.copilot",
         "formulahendry.dotnet",
         "eamodio.gitlens",
-        "vscjava.vscode-java-test"
+        "vscjava.vscode-java-test",
+        "ms-vscode.cpptools-themes",
+        "ms-vscode.cpptools",
+        "kaysonwu.cpptask",
+        "platformio.platformio-ide"
     ]
 }
