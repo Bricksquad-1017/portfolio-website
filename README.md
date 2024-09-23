@@ -6,10 +6,13 @@ This is a personal website to showcase my web development projects and skills. I
 
 ## Features
 
+- About Me Section
+- Project Showcase
 - Responsive design
 - Smooth scroll navigation
-- Project gallery
+- Interactive Elements
 - Contact form
+- SEO Optimization
 
 ## About Me
 
