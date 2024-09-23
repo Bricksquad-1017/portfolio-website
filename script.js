@@ -53,3 +53,6 @@ function init() {
     loadProjects();
     validateForm();
 }
+
+// Call the init function to initialize functionalities
+document.addEventListener('DOMContentLoaded', init);
