@@ -26,7 +26,6 @@ function smoothScroll() {
         });
     });
 }
-}
 
 // Dynamic Content Loading
 function loadProjects() {
@@ -64,9 +63,6 @@ function validateForm() {
                 e.preventDefault(); // Prevent form submission
                 alert('Please fill in all fields.');
             }
-        }
-        
-            }
         });
     }
 }
@@ -79,8 +75,4 @@ function init() {
 }
 
 // Call the init function to initialize functionalities
-document.addEventListener('DOMContentLoaded', init);
-
-// Call the init function to initialize functionalities
-document.addEventListener('DOMContentLoaded', init)// Call the init function to initialize functionalities
 document.addEventListener('DOMContentLoaded', init);

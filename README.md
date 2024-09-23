@@ -46,7 +46,7 @@ npm start
 2. Create a new branch `git checkout -b feature-branch`
 3. Make your changes and commit them.
 4. push to the branch: `git push origin feature-branch`
-5. Create a pull request. 
+5. Create a pull request.
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
