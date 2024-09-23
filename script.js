@@ -6,7 +6,7 @@
 function name(params) {
     // script.js
 
-}
+
 
 // Smooth Scrolling
 function smoothScroll() {
@@ -18,6 +18,7 @@ function smoothScroll() {
             });
         });
     });
+}
 }
 
 // Dynamic Content Loading
@@ -54,11 +55,11 @@ function validateForm() {
                 e.preventDefault(); // Prevent form submission
                 alert('Please fill in all fields.');
             }
-        });
-    }
-}       }
-    });
-}
+        }
+        
+        }
+            });
+        }
 
 // Initialize Functions
 function init() {
