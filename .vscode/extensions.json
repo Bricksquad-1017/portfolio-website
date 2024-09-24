@@ -13,6 +13,7 @@
         "ms-vscode.cpptools",
         "kaysonwu.cpptask",
         "platformio.platformio-ide",
-        "tejasvi.rainbow-brackets-2"
+        "tejasvi.rainbow-brackets-2",
+        "dbaeumer.vscode-eslint"
     ]
 }
