@@ -1,4 +1,12 @@
 {
     "platformio-ide.activateProjectOnTextEditorChange": true,
-    "platformio-ide.useDevelopmentPIOCore": true
+    
+    // Use the development version of PlatformIO Core
+    "platformio-ide.useDevelopmentPIOCore": true,
+    
+    // Configuration for markdownlint
+    "markdownlint.config": {
+        "accessibility": true
+        
+    }
 }

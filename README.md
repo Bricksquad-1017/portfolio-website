@@ -54,19 +54,17 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 You can reach me at [cervantes.miguel1017@icloud.com](mailto:cervantes.miguel1017@icloud.com) for any questions or collaboration opportunities.
 
-## markdown
+## Short Description
 
-    # Portfolio Website
+This portfolio website serves as a showcase of my skills, projects, and professional journey as a web developer.
 
-    ## Short Description
-    This portfolio website serves as a showcase of my skills, projects, and professional journey as a web developer.
+## Detailed Overview
 
-    ## Detailed Overview
-    It highlights my expertise in various technologies and provides detailed insights into the projects I have worked on, demonstrating my ability to create impactful web solutions. The site aims to connect with potential employers and clients, offering a glimpse into my creativity and commitment to continuous learning in the field of web development.
+It highlights my expertise in various technologies and provides detailed insights into the projects I have worked on, demonstrating my ability to create impactful web solutions. The site aims to connect with potential employers and clients, offering a glimpse into my creativity and commitment to continuous learning in the field of web development.
     ```
 
-3. **Paste into Your README.md**: Paste the copied text into your `README.md` file. You can place it at the beginning of the file or wherever you feel it fits best.
+3.Paste into Your README.md**: Paste the copied text into your `README.md` file. You can place it at the beginning of the file or wherever you feel it fits best.
 
-4. **Save the File**: After pasting the text, save the changes to your `README.md`.
+4.Save the File**: After pasting the text, save the changes to your `README.md`.
 
-5. **Preview (Optional)**: If your text editor supports Markdown preview, you can view how it will look when rendered.
+5.Preview (Optional)**: If your text editor supports Markdown preview, you can view how it will look when rendered.
