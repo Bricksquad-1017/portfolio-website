@@ -1,4 +1,5 @@
 {
+    // Automatically activate PlatformIO project when a text editor is changed
     "platformio-ide.activateProjectOnTextEditorChange": true,
     
     // Use the development version of PlatformIO Core
