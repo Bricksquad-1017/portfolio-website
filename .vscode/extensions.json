@@ -12,6 +12,7 @@
         "ms-vscode.cpptools-themes",
         "ms-vscode.cpptools",
         "kaysonwu.cpptask",
-        "platformio.platformio-ide"
+        "platformio.platformio-ide",
+        "tejasvi.rainbow-brackets-2"
     ]
 }
