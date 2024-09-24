@@ -20,7 +20,6 @@ Check out my live portfolio here[Live Demo](https://Bricksquad-1017.github.io/po
 
 I am a passionate self-taught web developer with a keen interest in creating dynamic and user-friendly websites. With experience in various web technologies, I thrive on transforming ideas into beautiful, functional digital experiences. I love exploring new tools and frameworks, constantly seeking to enhance my skills and stay ahead in the ever-evolving tech landscape. Each project is an opportunity for me to learn and grow, and I’m excited to bring innovative solutions to life!
 
-
 ## Installation
 
 1. Navigate to the project directory:
@@ -29,11 +28,17 @@ I am a passionate self-taught web developer with a keen interest in creating dyn
    cd portfolio-website
    ```
 
-3.(Optional) Install dependencies:
+2. (Optional) Install dependencies:
 
-```bash
-npm start
-```
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm start
+   ```
 
 ## Contributing
 
@@ -59,4 +64,3 @@ It highlights my expertise in various technologies and provides detailed insight
 
 ```bash
 npm start
-    ```
