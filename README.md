@@ -4,7 +4,7 @@ This is a personal website to showcase my web development projects and skills. I
 
 ## Live Demo
 
-Check out my live portfolio here[Live Demo](https://Bricksquad-1017.github.io/portfolio)
+Check out my live portfolio here: [Live Demo](https://Bricksquad-1017.github.io/portfolio)
 
 ## Features
 
@@ -61,6 +61,12 @@ This portfolio website serves as a showcase of my skills, projects, and professi
 ## Detailed Overview
 
 It highlights my expertise in various technologies and provides detailed insights into the projects I have worked on, demonstrating my ability to create impactful web solutions. The site aims to connect with potential employers and clients, offering a glimpse into my creativity and commitment to continuous learning in the field of web development.
+
+1. Run the tests:
+
+   ```bash
+   npm test
+   ```
 
 ```bash
 npm start
