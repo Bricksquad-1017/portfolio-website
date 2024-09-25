@@ -14,6 +14,9 @@
         "kaysonwu.cpptask",
         "platformio.platformio-ide",
         "tejasvi.rainbow-brackets-2",
-        "dbaeumer.vscode-eslint"
+        "dbaeumer.vscode-eslint",
+        "ms-toolsai.jupyter",
+        "formulahendry.code-runner",
+        "ms-vsliveshare.vsliveshare"
     ]
 }
