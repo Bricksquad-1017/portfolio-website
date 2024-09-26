@@ -4,7 +4,7 @@
 - VS Code: vscode/1.93.1
 - OS: Mac
 
-## Network
+## Network Status
 
 User Settings:
 
@@ -19,7 +19,6 @@ User Settings:
 - Extension Version: 0.20.3 (prod)
 - VS Code: vscode/1.93.1
 - OS: Mac
-
 
 ## Network
 
@@ -47,7 +46,7 @@ Connecting to [https://api.githubcopilot.com/_ping](https://api.githubcopilot.co
 - Node Fetcher: HTTP 200
 - Helix Fetcher: HTTP 200
 
-## Documentation
+## Firewall Documentation
 
 In corporate networks: [Troubleshooting firewall settings for GitHub Copilot](https://docs.github.com/en/copilot/troubleshooting-github-copilot/troubleshooting-firewall-settings-for-github-copilot).
 
