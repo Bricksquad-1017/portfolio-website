@@ -4,7 +4,7 @@ This is a personal website to showcase my web development projects and skills. I
 
 ## Live Demo
 
-Check out my live portfolio here[Live Demo](https://Bricksquad-1017.github.io/portfolio)
+Check out my live portfolio here: [Live Demo](https://Bricksquad-1017.github.io/portfolio)
 
 ## Features
 
@@ -22,23 +22,23 @@ I am a passionate self-taught web developer with a keen interest in creating dyn
 
 ## Installation
 
-1. Clone the repository:
-
-```bash
-git clone https://github.com/Bricksquad-1017/portfolio-website.git
-```
-
 1. Navigate to the project directory:
 
    ```bash
    cd portfolio-website
    ```
 
-3.(Optional) Install dependencies:
+2. (Optional) Install dependencies:
 
-```bash
-npm start
-```
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm start
+   ```
 
 ## Contributing
 
@@ -53,3 +53,20 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 ## Contact
 
 You can reach me at [cervantes.miguel1017@icloud.com](mailto:cervantes.miguel1017@icloud.com) for any questions or collaboration opportunities.
+
+## Short Description
+
+This portfolio website serves as a showcase of my skills, projects, and professional journey as a web developer.
+
+## Detailed Overview
+
+It highlights my expertise in various technologies and provides detailed insights into the projects I have worked on, demonstrating my ability to create impactful web solutions. The site aims to connect with potential employers and clients, offering a glimpse into my creativity and commitment to continuous learning in the field of web development.
+
+1. Run the tests:
+
+   ```bash
+   npm test
+   ```
+
+```bash
+npm start
