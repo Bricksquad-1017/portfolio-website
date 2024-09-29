@@ -1,93 +1,114 @@
-/* Style the navigation bar */
-.navbar {
-    background-color: #333;
-    overflow: hidden;
-}
+body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                background-color: #f0f0f0;
+                color: #333;
+            }
 
-/* Style the navigation bar links */
-.navbar ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 14px 20px;
-    display: block;
-}
+            .navbar {
+                display: flex;
+                justify-content: center;
+                background-color: #333;
+                padding: 1rem;
+                position: fixed;
+                width: 100%;
+                top: 0;
+                z-index: 1000;
+                transition: background-color 0.3s ease-in-out;
+            }
 
-/* Add a hover effect to the navigation bar links */
-.navbar ul li a:hover {
-    background: linear-gradient(to right, #feb47b, #ff7e5f);
-    color: white;
-}
+            .navbar ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                gap: 2rem;
+            }
 
-/* Style the header image */
-.header-image {
-    width: 100%;
-    height: auto;
-}
+            .navbar ul li a {
+                color: white;
+                text-decoration: none;
+                transition: color 0.3s ease;
+            }
 
-/* Style the call-to-action button */
-.cta-button {
+            .navbar ul li a:hover {
+                color: #00aced;
+            }
+
+            header {
+                text-align: center;
+                padding: 6rem 1rem 2rem;
+                background-color: #555;
+                animation: fadeIn 1.5s ease-in-out;
+            }
+
+            header img.header-image {
+                max-width: 100%;
+                height: auto;
+                border-radius: 10px;
+                opacity: 0;
+                animation: fadeInImage 1.5s ease-in-out forwards;
+            }
+
+            section {
+                padding: 4rem 1rem;
+                text-align: center;
+                animation: slideUp 1s ease-in-out;
+            }
+
+            .cta-button {
     background-color: #ff7e5f;
     color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    font-size: 16px;
-}
+                transition: background-color 0.3s ease, transform 0.3s ease;
+            }
 
-/* Add hover effect to the button */
-.cta-button:hover {
-    background-color: #feb47b;
-}
+            .cta-button:hover {
+                background-color: #007bb5;
+                transform: scale(1.05);
+            }
 
-/* Style the footer icons */
-footer i {
-    font-size: 24px;
-    margin: 0 10px;
-    color: #333;
-}
+            footer {
+                background-color: #333;
+                color: white;
+                padding: 2rem;
+                text-align: center;
+                position: relative;
+                bottom: 0;
+                width: 100%;
+            }
 
-/* Add a hover effect to the navigation bar links */
-.navbar ul li a:hover {
-    background: linear-gradient(to right, #feb47b, #ff7e5f);
-    color: white;
-}
+            footer p {
+                margin: 0.5rem 0;
+            }
 
-/* Style the navigation bar list */
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-}
+            footer .fa {
+                font-size: 1.5rem;
+                color: white;
+                padding: 1rem;
+                transition: color 0.3s ease;
+            }
 
-/* Style the navigation bar list items */
-.navbar li {
-    float: left;
-}
+            footer .fa:hover {
+                color: #00aced;
+            }
 
-/* Add a gradient background to the navigation bar */
-.navbar {
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
-}
+            @keyframes fadeIn {
+                0% { opacity: 0; }
+                100% { opacity: 1; }
+            }
 
-/* Add a box shadow to the navigation bar */
-.navbar {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+            @keyframes fadeInImage {
+                0% { opacity: 0; transform: translateY(20px); }
+                100% { opacity: 1; transform: translateY(0); }
+            }
 
-/* Change color on hover */
-.navbar li a:hover {
-    background-color: #ddd;
-    color: black;
-    body {
-        background-color: #f0f0f0; /* Light gray background */
-        color: #333; /* Dark text color */
-    }
- 
-    header {
-        background-color: #4CAF50; /* Green header */
-        color: white; /* White text */
-    }.navbar a {
-        transition: background-color 0.3s ease; /* Smooth transition for background color */
-    }}
+            @keyframes slideUp {
+                0% { opacity: 0; transform: translateY(50px); }
+                100% { opacity: 1; transform: translateY(0); }
+            }
+        </style>
