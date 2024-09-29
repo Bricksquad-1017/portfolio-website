@@ -7,6 +7,27 @@ body {
     color: #333;
 }
 
+header {
+    background-image: url('path/to/your/matrix-wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #fff;
+}
+```
+```
+<header>
+  <h1>Matrix</h1>
+</header>
+```
+    
 .navbar {
     display: flex;
     justify-content: center;
