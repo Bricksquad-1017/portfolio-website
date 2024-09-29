@@ -3,28 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miguel Cervantes - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="another-style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Font Awesome for icons -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon -->
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
-    <nav class="navbar" role="navigation">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
     <header>
-        <img src="header-image.jpg" alt="Header Image" class="header-image">
+        <div class="video-container">
+            <video autoplay muted loop>
+                <source src="videos/your-video-file.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="overlay">
+                <h1>Matrix</h1>
+            </div>
+        </div>
     </header>
-
-    <section id="home">
-        <h1>Welcome To My Website</h1>
+    <!-- Other content goes here -->
+</body>
+</html>
         <button class="cta-button" aria-label="Click Me">Click Me</button>
     </section>
 
@@ -64,18 +60,5 @@
         <span class="fa fa-twitter" role="img" aria-label="Twitter"><span class="sr-only">Twitter</span></span>
         <p>&copy; 2023 Your Name</p>
     </footer>
-
-    <!-- Importing Markdown-it as a module -->
-    <script type="module">
-        import MarkdownIt from 'https://cdn.jsdelivr.net/npm/markdown-it@14.0.1/esm/index.js';
-
-        // Example of how to use MarkdownIt
-        document.addEventListener('DOMContentLoaded', () => {
-            const md = new MarkdownIt();
-            const markdownContent = '# Hello, Markdown!';
-            const result = md.render(markdownContent);
-            console.log(result); // This will log the HTML output of the markdown
-        });
-    </script>
 </body>
 </html>
