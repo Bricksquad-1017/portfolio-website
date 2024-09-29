@@ -1,0 +1,23 @@
+{
+    "recommendations": [
+        "github.copilot-chat",
+        "vsnikhil.openai-autocomplete",
+        "aaravb.chrome-extension-developer-tools",
+        "negokaz.live-server-preview",
+        "igordvlpr.open-in-browser",
+        "formulahendry.dotnet",
+        "eamodio.gitlens",
+        "vscjava.vscode-java-test",
+        "ms-vscode.cpptools-themes",
+        "ms-vscode.cpptools",
+        "kaysonwu.cpptask",
+        "platformio.platformio-ide",
+        "tejasvi.rainbow-brackets-2",
+        "dbaeumer.vscode-eslint",
+        "ms-toolsai.jupyter",
+        "formulahendry.code-runner",
+        "ms-vsliveshare.vsliveshare",
+        "github.github-vscode-theme",
+        "ms-dotnettools.csdevkit"
+    ]
+}
