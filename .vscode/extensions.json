@@ -17,6 +17,7 @@
         "ms-toolsai.jupyter",
         "formulahendry.code-runner",
         "ms-vsliveshare.vsliveshare",
-        "github.github-vscode-theme"
+        "github.github-vscode-theme",
+        "ms-dotnettools.csdevkit"
     ]
 }
