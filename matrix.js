@@ -12,8 +12,11 @@ canvas.width = window.innerWidth;
 const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 const fontSize = 10; // Size of the characters
 const columns = canvas.width / fontSize; // Number of columns for the rain
-const drops = []; // Array to hold the Y position of each drop
 
+const drops = []; // Array to hold the Y position of each drop
+ for (let x = 0; x < columns; x++) {
+       drops[x] = 1; // Start at the top of the screen
+   }
 // Initialize drops with random starting positions
 for (let x = 0; x < columns; x++) {
     drops[x] = Math.random() * canvas.height; // Random starting point for each column
@@ -28,6 +31,19 @@ function draw() {
     ctx.fillStyle = '#0F0'; // Set the color for the characters (green)
     ctx.font = fontSize + 'px monospace'; // Set the font size and type
 
+     for (let x = 0; x < columns; x++) {
+       const text = characters.charAt(Math.floor(Math.random() * characters.length));
+           ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+     }
+    if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+               drops[i] = 0; // Reset drop to the top
+           }
+           drops[i]++;
+       }
+   }
+
+setInterval(draw, 33); // Draw every 33 milliseconds
+   
     // Loop through each column to draw characters
     for (let i = 0; i < drops.length; i++) {
         // Get a random character from the characters string
