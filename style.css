@@ -3,6 +3,12 @@ body, h2, p {
     padding: 0;
 }
 
+.content {
+       position: relative;
+       z-index: 1; /* Ensure content is above the video */
+       color: white; /* Change text color for visibility */
+   }
+
 /* Body styles */
 body {
     font-family: Arial, sans-serif;

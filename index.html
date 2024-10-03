@@ -20,20 +20,23 @@
     </style>
 </head>
 <body>
-body>
     <div class="welcome-message">
         <h1>Welcome to the Matrix</h1>
         <p>Experience the digital rain!</p>
     </div>
     <canvas id="matrixCanvas"></canvas>
-    <script src="js/matrix.js"></script>
-</body>
-<canvas id="matrixCanvas"></canvas>
-<audio autoplay loop></audio>
-    <source src="path/to/your/sound.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-</audio>
 
-<script src="js/matrix.js"></script>
+    <video autoplay loop muted playsinline style="width: 100%; height: auto; position: absolute; top: 0; left: 0; z-index: -1;"></video>
+       <source src="videos/matrix-rain.mp4" type="video/mp4">
+       Your browser does not support the video tag.
+   </video>
+    
+    <!-- Audio element -->
+    <audio autoplay loop>
+        <source src="path/to/your/sound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="js/matrix.js"></script>
 </body>
 </html>
