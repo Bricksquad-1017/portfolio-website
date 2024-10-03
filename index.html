@@ -2,95 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Miguel Cervantes - Portfolio showcasing projects and skills.">
-    <meta name="keywords" content="portfolio, web development, Miguel Cervantes, projects">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Miguel Cervantes">
-    <title>Miguel Cervantes - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="another-style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <title>Matrix Rain Effect</title>
+    <link rel="stylesheet" href="css/style.css">
     <style>
-        .grey-section {
-            background-color: grey;
-            padding: 20px;
-            text-align: center;
+        body {
+            margin: 0;
+            overflow: hidden; /* Prevent scrollbars */
+            background: black; /* Background color */
         }
-        .live-image {
-            width: 100%;
-            max-width: 600px;
-            height: auto;
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="video-container"> 
-            <video autoplay muted loop>
-                <source src="https://dl-09.w-ytdl.store/tunnel?id=7n3myOfJSlnzFLhECsNCP&exp=1727661106444&sig=VDCTz-h_cOcHlH75AM_2RGSRJPlyE1YhFRcKyFWSO40&sec=pzUiiTOfy2kiT8QlFyXZhlDWO4X8qQOwO8EU2wyyT9Y&iv=sg8m4ICQHB_vvMm998hgQA" type="video/mp4">
-                Your browser does not support the video tag. 
-            </video>
-            <div class="overlay">
-                <h1>Cervantes' Creations</h1>
-            </div>
-        </div>  
-    </header>
+body>
+    <div class="welcome-message">
+        <h1>Welcome to the Matrix</h1>
+        <p>Experience the digital rain!</p>
+    </div>
+    <canvas id="matrixCanvas"></canvas>
+    <script src="js/matrix.js"></script>
+</body>
+<canvas id="matrixCanvas"></canvas>
+<audio autoplay loop></audio>
+    <source src="path/to/your/sound.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
 
-    <nav class="navbar" role="navigation">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <section id="home">
-      <h1>Welcome To My Website</h1>
-      <button class="cta-button" aria-label="Click Me">Click Me</button>
-    </section>
-
-    <section id="about">
-     <h2>About</h2>
-     <p>🌟 Hi, I'm Miguel Cervantes! A passionate self-taught web developer diving into the world of web and app development. I thrive on creativity and innovation, always eager to learn new skills and technologies. Join me on my journey as I build and explore the digital landscape! 🚀</p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>I'm always open to new opportunities and collaborations! Feel free to reach out to me through any of the following methods:</p>
-        
-        <div class="contact-info">
-            <h3>Email</h3>
-            <p>Primary: <a href="mailto:cervantes.miguel1017@icloud.com">cervantes.miguel1017@icloud.com</a></p>
-            <p>Secondary: <a href="mailto:cervantesmiguel1017@gmail.com">cervantesmiguel1017@gmail.com</a></p>
-            
-            <h3>Location</h3>
-            <p>San Fernando, California</p> <!-- Replace with your actual location -->
-            
-            <h3>Social Media</h3>
-             <ul>
-                <li><a href="https://www.linkedin.com/in/" target="_blank">LinkedIn</a></li> <!-- Replace with your LinkedIn profile -->
-                <li><a href="https://github.com/Bricksquad-1017" target="_blank">GitHub</a></li> <!-- Replace with your GitHub profile -->
-                <li><a href="https://twitter.com/10I7_BrickSquad" target="_blank">Twitter</a></li> <!-- Replace with your Twitter profile -->
-            </ul>
-        </div>
-
-        <h3>Send Me a Message</h3>
-        <form action="your_form_processing_script.php" method="post"> <!-- Replace with your form processing script -->
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
-    <section class="grey-section">
-        <img src="path-to-your-live-image.jpg" alt="Live Image" class="live-image">
-    </section>
+<script src="js/matrix.js"></script>
 </body>
 </html>
