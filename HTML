@@ -3,26 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matrix Rain Effect</title>
-    <link rel="stylesheet" href="css/style.css"> <!-- Link to your CSS file -->
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <video autoplay loop muted playsinline style="width: 100%; height: auto; position: absolute; top: 0; left: 0; z-index: -1;">
-        <source src="videos/matrix-rain.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="bio.html">Bio</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <audio autoplay loop>
-        <source src="audio/sound.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+    <section>
+        <h2>About Me</h2>
+        <p>This is a brief introduction about myself.</p>
+        <!-- You can embed matrix rain here -->
+        <canvas id="matrixCanvas"></canvas>
+    </section>
 
-    <div class="content" style="position: relative; z-index: 1; color: white; text-align: center;">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Experience the digital rain!</p>
-    </div>
+    <footer>
+        <p>Connect with me on social media:</p>
+        <a href="https://twitter.com">Twitter</a>
+        <a href="https://facebook.com">Facebook</a>
+        <a href="https://linkedin.com">LinkedIn</a>
+        <a href="https://github.com">Github</a>
+    </footer>
 
-    <canvas id="matrixCanvas"></canvas>
-    <script src="js/matrix.js"></script> <!-- Link to your JavaScript file -->
+    <script src="scripts/matrix.js"></script>
 </body>
 </html>
