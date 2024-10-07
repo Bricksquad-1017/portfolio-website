@@ -139,7 +139,9 @@ contact-section {
     border-radius: 4px; /* Rounded corners */
     background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
     color: black; /* Text color */
-    font-size: 16px; /* Font size */
+    font-size: 20px; /* Font size */ /*increase font size for thicker cursor */
+    outline: none;/* Remove outline */
+    caret-color: #39ff14;/* Neon green color for the blinking cursor */
     outline: none; /* Remove outline on focus */
     caret-color: #39FF14; /* Neon green color for the blinking cursor */
 }
@@ -147,4 +149,30 @@ contact-section {
 #search:focus {
     border-color: #0F0; /* Change border color on focus */
     background-color: rgba(255, 255, 255, 1); /* Solid background on focus */
+}
+
+.input-container {
+    position: relative;
+    display: inline-block; /* Adjust as needed */
+}
+
+.input-container::after {
+    content: '';
+    position: absolute;
+    width: 4px; /* Adjust thickness here */
+    height: 1em; /* Match the height of the input */
+    background-color: #39FF14; /* Cursor color */
+    left: 5px; /* Position it inside the input */
+    top: 50%;
+    transform: translateY(-50%);
+    animation: blink 1s step-end infinite; /* Blinking effect */
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
 }
