@@ -180,3 +180,18 @@ contact-section {
         opacity: 0;
     }
 }
+
+/* Existing styles... */
+
+/* Add this for the contact page */
+body {
+    background-color: #f0f0f0; /* Light gray background */
+    /* For a gradient background */
+    /* background: linear-gradient(to right, #6a11cb, #2575fc); */
+    /* For an image background */
+    /* background-image: url('path/to/your/image.jpg'); */
+    /* background-size: cover; */
+    /* background-position: center; */
+    color: #333; /* Text color */
+    font-family: Arial, sans-serif; /* Font style */
+}
