@@ -135,11 +135,11 @@ contact-section {
 #search {
     padding: 5px;
     margin-left: 20px;
-    border: 1px solid #ccc; /* Add a border */
+    border: 1px solid #05f619; /* Add a border */
     border-radius: 4px; /* Rounded corners */
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    background-color: rgba(25, 25, 25, 0.8); /* Semi-transparent background */
     color: black; /* Text color */
-    font-size: 20px; /* Font size */ /*increase font size for thicker cursor */
+    font-size: 15px; /* Font size */ /*increase font size for thicker cursor */
     outline: none;/* Remove outline */
     caret-color: #39ff14;/* Neon green color for the blinking cursor */
     outline: none; /* Remove outline on focus */
@@ -166,6 +166,10 @@ contact-section {
     top: 50%;
     transform: translateY(-50%);
     animation: blink 1s step-end infinite; /* Blinking effect */
+}
+
+.blink_me {
+  animation: blinker 1s linear infinite;
 }
 
 @keyframes blink {
