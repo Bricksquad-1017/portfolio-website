@@ -3,31 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Project 1 - My Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css"> <!-- Link to your main CSS -->
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="bio.html">Bio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <h1>My Projects</h1>
-        <p>Here are some of the projects I've worked on:</p>
-        <ul>
-            <li>Project 1: Description</li>
-            <li>Project 2: Description</li>
-            <li>Project 3: Description</li>
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="#">Projects</a>
+                <ul class="dropdown">
+                    <li><a href="project1.html">Project 1</a></li>
+                    <li><a href="project2.html">Project 2</a></li>
+                    <li><a href="project3.html">Project 3</a></li>
+                </ul>
+            </li>
         </ul>
-    </main>
+    </nav>
 
-    <script src="matrix.js"></script>
+    <div class="project-container">
+        <h1>Project 1 Title</h1>
+        <p>Description of Project 1. Explain what the project is about, the technologies used, and any challenges faced.</p>
+        <img src="path/to/project1-image.jpg" alt="Project 1 Screenshot">
+        <a href="https://link-to-live-demo.com" target="_blank">View Live Demo</a>
+        <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Miguel R. All rights reserved.</p>
+    </footer>
 </body>
 </html>

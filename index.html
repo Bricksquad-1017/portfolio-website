@@ -3,34 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles/styles.css"> <!-- Link to your main CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            overflow: hidden; /* Prevent scrolling */
+        }
+
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 0; /* Behind everything */
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Cover the entire area */
+        }
+
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1; /* Behind the overlay */
+        }
+
+        .overlay {
+            position: relative;
+            z-index: 2; /* Above the canvas */
+            color: white; /* Text color */
+            text-align: center; /* Center text */
+            padding: 20px;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for nav */
+            padding: 10px;
+        }
+
+        .nav-menu {
+            list-style: none;
+        }
+
+        .nav-menu li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .nav-menu a {
+            color: white; /* Link color */
+            text-decoration: none; /* Remove underline */
+        }
+
+        .nav-menu a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+
+        #search {
+            padding: 5px;
+            margin-left: 20px;
+        }
+
+        #typingIndicator {
+            display: none; /* Hidden by default */
+            color: white;
+        }
+
+        #typingIndicator.hidden {
+            display: none; /* Keep hidden */
+        }
+
+        h1 {
+            margin-top: 100px; /* Space from the top */
+            font-size: 2.5em; /* Adjust as needed */
+        }
+
+        p {
+            font-size: 1.2em; /* Adjust as needed */
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="bio.html">Bio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="video-background">
+        <video autoplay muted  loop>
+            <source src="https://videos.pexels.com/video-files/11584395/11584395-uhd_3840_2160_60fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
 
-    <main>
-        <div class="video-background">
-            <video autoplay muted loop>
-                <source src="https://videos.pexels.com/video-files/11584395/11584395-uhd_3840_2160_60fps.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="overlay">
-                <h1>Welcome to My Portfolio</h1>
-                <p>Explore my work and get to know me!</p>
-            </div>
-        </div>
-    </main>
+    <!-- Canvas for Matrix Rain Effect -->
+    <canvas id="matrixCanvas"></canvas>
 
-    <script src="matrix.js"></script>
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <input type="text" id="search" placeholder="Type here..." onkeyup="showTypingEffect()">
+        <div id="typingIndicator" class="hidden">Typing...</div>
+    </nav>
+
+    <div class="overlay">
+        <h1>Cervantes' Creation</h1>
+        <p>Explore my work and get to know me!</p>
+    </div>
+
+    <script>
+        // Matrix Rain Effect
+        const canvas = document.getElementById('matrixCanvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const fontSize = 16;
+        const columns = canvas.width / fontSize;
+        const drops = Array(Math.floor(columns)).fill(1);
+        const matrixChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+
+        function drawMatrixRain() {
+            ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.fillStyle = "#0F0";
+            ctx.font = `${fontSize}px monospace`;
+
+            for (let i = 0; i < drops.length; i++) {
+                const char = matrixChars[Math.floor(Math.random() * matrixChars.length)];
+                ctx.fillText(char, i * fontSize, drops[i] * fontSize);
+
+                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+                drops[i]++;
+            }
+        }
+
+        setInterval(drawMatrixRain, 50);
+
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+
+        // Typing effect function
+        function showTypingEffect() {
+            const typingIndicator = document.getElementById('typingIndicator');
+            if (document.getElementById('search').value.length > 0) {
+                typingIndicator.classList.remove('hidden');
+            } else {
+                typingIndicator.classList.add('hidden');
+            }
+        }
+    </script>
 </body>
 </html>

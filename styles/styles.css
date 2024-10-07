@@ -1,85 +1,150 @@
-/* Global resets and styling */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Navigation Styles */
+nav {
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+    background-color: transparent; /* No background for the nav */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-body, html {
-  font-family: Arial, sans-serif;
-  background-color: #111;
-  color: #eee;
-  min-height: 100vh;
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-/* Header and navigation */
-header {
-  background-color: #222;
-  padding: 1rem;
-  text-align: center;
+.nav-menu li {
+    position: relative;
 }
 
-header h1 {
-  font-size: 2.5rem;
-  color: #fff;
+.nav-menu a {
+    text-decoration: none;
+    color: white; /* Change to your preferred color */
+    padding: 10px;
+    transition: color 0.3s;
 }
 
-nav ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
+.nav-menu a:hover {
+    color: #0F0; /* Change color on hover */
 }
 
-nav ul li {
-  margin: 0 1rem;
+/* Dropdown Menu Styles */
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    z-index: 2;
 }
 
-nav ul li a {
-  color: #0f0;
-  text-decoration: none;
-  font-size: 1.2rem;
+.nav-menu li:hover .dropdown {
+    display: block; /* Show dropdown on hover */
 }
 
-nav ul li a:hover {
-  text-decoration: underline;
+.dropdown li {
+    padding: 5px 10px;
 }
 
-/* Section Styling */
-section {
-  padding: 2rem;
-  text-align: center;
+.dropdown li a {
+    color: white; /* Change to your preferred color */
 }
 
-canvas#matrixCanvas {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
+.dropdown li a:hover {
+    color: #0F0; /* Change color on hover */
 }
 
-/* Footer */
-footer {
-  background-color: #222;
-  padding: 1rem;
-  text-align: center;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+/* Interactive Greeting Button Styles */
+.interactive-greeting {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #0F0; /* Green background */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 2rem;
-  }
+.interactive-greeting:hover {
+    background-color: #0A0; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+contact-section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for contrast */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 
-  nav ul {
+.contact-section h1, .contact-section h2 {
+    color: #333; /* Dark text for headings */
+}
+
+.contact-section form {
+    display: flex;
     flex-direction: column;
-  }
+}
 
-  nav ul li {
-    margin-bottom: 0.5rem;
-  }
+.contact-section input, .contact-section textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-section button {
+    padding: 10px;
+    background-color: #0F0; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-section button:hover {
+    background-color: #0A0; /* Darker green on hover */
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media li {
+    margin: 5px 0;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #0F0; /* Green color for links */
+}
+
+.social-media a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.additional-info {
+    margin-top: 20px;
+}
+#search {
+    padding: 5px;
+    margin-left: 20px;
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    color: black; /* Text color */
+    font-size: 16px; /* Font size */
+    outline: none; /* Remove outline on focus */
+    caret-color: #39FF14; /* Neon green color for the blinking cursor */
+}
+
+#search:focus {
+    border-color: #0F0; /* Change border color on focus */
+    background-color: rgba(255, 255, 255, 1); /* Solid background on focus */
 }
