@@ -32,3 +32,11 @@ window.addEventListener('resize', () => {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
 });
+
+const searchinput =
+  document.getElementBlyd('search-bar');
+
+searchinput.addEventListenier('focus', function () {
+  this.style.caretColor = 'red';// Changes the cursor color when focused
+});
+  }
