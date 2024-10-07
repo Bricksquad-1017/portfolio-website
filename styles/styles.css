@@ -8,20 +8,30 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
-
+/* Make the nav-menu a flex container */
 .nav-menu {
-    list-style: none;
-    display: flex;
+    display: flex; /*Use flexbot layout */
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
     gap: 20px;
 }
 
+/* Styling the list items */
 .nav-menu li {
     position: relative;
+    margin-right: 20px; /* Add space between each item */
 }
 
+/* Optional: Remove margin from the last item */
+.nav-menu li:last-child {
+    margin-right: 0;
+}
+
+/* Optional: Style the links */
 .nav-menu a {
     text-decoration: none;
-    color: white; /* Change to your preferred color */
+    color: #000; /* Change to your preferred color */
     padding: 10px;
     transition: color 0.3s;
 }
@@ -139,7 +149,7 @@ nav {
     border: 1px solid #05f619; /* Add a border */
     border-radius: 4px; /* Rounded corners */
     background-color: rgba(25, 25, 25, 0.8); /* Semi-transparent background */
-    color: black; /* Text color */
+    color: #05f619; /* Text color */
     font-size: 15px; /* Font size */ /*increase font size for thicker cursor */
     outline: none;/* Remove outline */
     caret-color: #39ff14;/* Neon green color for the blinking cursor */
@@ -149,7 +159,7 @@ nav {
 
 #search:focus {
     border-color: #0F0; /* Change border color on focus */
-    background-color: rgba(255, 255, 255, 1); /* Solid background on focus */
+    background-color: rgba(77, 76, 73, 0); /* Solid background on focus */
 }
 
 input {
@@ -199,4 +209,23 @@ body {
     color: #333; /* Text color */
     font-family: Arial, sans-serif; /* Font style */
     /* contain property removed */
+}
+/* Existing style for .container */
+.container {
+    width: 100%; /* Full width */
+    padding: 20px; /* Padding can be in px or % */
+    background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column; /* Stack navigation items vertically */
+    }
+}
+
+/* Media query for smaller screen */ 
+@media (max-width: 768px) {
+    .container {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
 }
